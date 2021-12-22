@@ -47,9 +47,9 @@ function draw() {
         }
     } else if (state == 2) {
         stateTwo();
-        if (speed > 30 && speed < 100) {
+        if (speed > 20 && speed < 100) {
             progress++;
-            if (progress > 6) {
+            if (progress > 10) {
                 state = 3;
                 console.log("state 1->2");
             }
@@ -114,6 +114,7 @@ function draw() {
 
 function stateOne() {
     clear();
+    fill(progress);
     textAlign(CENTER, CENTER);
     text('Smoothly', width/2, windowHeight- 65);
     text('부드럽게', width/2, windowHeight- 30);
@@ -122,6 +123,7 @@ function stateOne() {
 
 function stateTwo() {
     clear();
+    fill(progress);
     textAlign(CENTER, CENTER);
     text('Faster', width/2, windowHeight- 65);
     text('빠르게', width/2, windowHeight- 30);
@@ -130,6 +132,7 @@ function stateTwo() {
 
 function stateThree() {
     clear();
+    fill(progress);
     textAlign(CENTER, CENTER);
     text('using all of your thumbs', width/2, windowHeight- 65);
     text('엄지 손가락 면을 최대한 붙여서', width/2, windowHeight- 30);
@@ -137,6 +140,7 @@ function stateThree() {
 
 function stateFour() {
     clear();
+    fill(progress);
     textAlign(CENTER, CENTER);
     text('left to right', width/2, windowHeight- 65);
     text('왼쪽에서 오른쪽으로', width/2, windowHeight- 30);
@@ -145,6 +149,7 @@ function stateFour() {
 
 function stateFive() {
     clear();
+    fill(progress);
     textAlign(CENTER, CENTER);
     text('Did you enjoy getting to know your phone screen glass?', width/2, 40);
     text('휴대폰 액정을 알아가는 시간을 만끽하셨나요?', width/2, 80);
@@ -153,6 +158,7 @@ function stateFive() {
 
 function stateSix() {
     clear();
+    fill(progress);
     textAlign(CENTER, CENTER);
     text('The glass says it’s happy to get to know you.', width/2, 40);
     text('유리액정 또한 당신을 알 수 있어서 기쁘다고 합니다.', width/2, 80);
