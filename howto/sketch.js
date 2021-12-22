@@ -79,7 +79,7 @@ function draw() {
         stateFour();
         if (speed > 0 && speed < 200) {
             progress++;
-            if (progress > 150) {
+            if (progress > 120) {
                 state = 2;
                 console.log("state 3->4");
                 progress = 0;
@@ -98,7 +98,24 @@ function draw() {
             progress++;
             if (progress > 2) {
                 state = 1;
-                console.log("state 0->1");
+                console.log("state 4->5");
+                progress = 0;
+            }
+        } else {
+            progress -= 10;
+            if (progress < 10) {
+                progress = 0;
+            }
+        }
+
+    }
+    else if(state == 6){
+        stateFive();
+        if (mouseIsPressed) {
+            progress++;
+            if (progress > 2) {
+                state = 1;
+                console.log("state 5->6");
                 progress = 0;
             }
         } else {
@@ -123,7 +140,7 @@ function stateOne() {
 
 function stateTwo() {
     clear();
-    fill(progress);
+    fill(progress*10);
     textAlign(CENTER, CENTER);
     text('Faster', width/2, windowHeight- 65);
     text('빠르게', width/2, windowHeight- 30);
