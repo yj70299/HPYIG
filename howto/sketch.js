@@ -14,8 +14,8 @@ function draw() {
     
     if (state == 0) {
 
-        text('How to Pat Your Mobile Phone', width/2, 40);
-        text('유리 액정을 쓰다듬는 방법', width/2, 80);
+        text('How to Pat Your Mouse', width/2, 40);
+        text('마우스를 쓰다듬는 방법', width/2, 80);
 
         if (mouseIsPressed) {
             progress++;
@@ -152,7 +152,7 @@ function stateThree() {
     fill(progress);
     textAlign(CENTER, CENTER);
     text('using all of your thumbs', width/2, windowHeight- 65);
-    text('엄지 손가락 면을 최대한 붙여서', width/2, windowHeight- 30);
+    text('검지 손가락 면을 최대한 붙여서', width/2, windowHeight- 30);
 }
 
 function stateFour() {
@@ -168,8 +168,8 @@ function stateFive() {
     clear();
     fill(progress);
     textAlign(CENTER, CENTER);
-    text('Did you enjoy getting to know your phone screen glass?', width/2, 40);
-    text('휴대폰 액정을 알아가는 시간을 만끽하셨나요?', width/2, 80);
+    text('Did you enjoy getting to know your mouse?', width/2, 40);
+    text('마우스를 알아가는 시간을 만끽하셨나요?', width/2, 80);
 
 }
 
@@ -177,7 +177,7 @@ function stateSix() {
     clear();
     fill(progress);
     textAlign(CENTER, CENTER);
-    text('The glass says it’s happy to get to know you.', width/2, 40);
-    text('유리액정 또한 당신을 알 수 있어서 기쁘다고 합니다.', width/2, 80);
+    text('The mouse says it’s happy to get to know you.', width/2, 40);
+    text('마우스 또한 당신을 알 수 있어서 기쁘다고 합니다.', width/2, 80);
 
 }
