@@ -151,7 +151,7 @@ function stateThree() {
     clear();
     fill(progress);
     textAlign(CENTER, CENTER);
-    text('using all of your thumbs', width/2, windowHeight- 65);
+    text('using all of your index finger', width/2, windowHeight- 65);
     text('검지 손가락 면을 최대한 붙여서', width/2, windowHeight- 30);
 }
 
