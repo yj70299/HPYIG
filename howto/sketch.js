@@ -63,7 +63,7 @@ function draw() {
         stateThree();
         if (speed > 0 && speed < 200) {
             progress++;
-            if (progress > 150) {
+            if (progress > 80) {
                 state = 2;
                 console.log("state 2->3");
                 progress = 0;
